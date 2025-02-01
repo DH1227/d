@@ -1,0 +1,41 @@
+:root{
+  --teal: #04fcd7;
+  --teal_hover: #279e8c;
+}
+*{
+    font-family: 'Poppins', sans-serif;
+  }
+  .h-font{
+      font-family: 'Merienda', cursive;
+   }
+    .swiper-slide img {
+      width: 100%; /* Makes the image fill the container */
+      height: auto; /* Maintains the aspect ratio */
+      object-fit: cover; /* Ensures the image covers the container without distortion */
+    }
+  
+    /* Optionally, set a specific size for the images */
+    .swiper-slide img {
+      max-width: 200%;
+      height: 400px; /* Set desired height */
+      object-fit: cover; /* Ensures the image looks good within the set height */
+    }
+  input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+  
+  .custom-bg{
+    background-color: var(--teal);
+    border: 1px solid var(--teal);
+  }
+  .custom-bg:hover{
+    background-color: var(--teal_hover);
+    border-color: var(--teal_hover);
+  }
+ .h-line{
+  width: 150px;
+  margin: 0 auto;
+  height: 1.7px;
+ }
