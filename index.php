@@ -94,16 +94,8 @@
           <div class="col-lg-1 mb-lg-3 mt-2 ">
             <button type="submit" class="btn text-white shadow-none custom-bg">Submit</button>
           </div>
-
-  
-  
         </div>
-  
       </div>
-
-
-
-
     </form>
     </div>
   </div>
