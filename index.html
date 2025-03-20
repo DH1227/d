@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="text/html; charset=iso-8859-2" http-equiv="Content-Type">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <title>Hotel Management</title>
+    <link rel="stylesheet" href="css/common.css">
+</head>
+<body>
+
+      <header>
+       <!---<img src="logo1.jpg" height="80px" width="80px" alt="logo">-->
+        <div class="container">
+          <h1>HOTEL PARADISE</h1>
+          
+            <nav>
+
+              <ul>
+                 <li><a href="home.html">Home</a></li>
+                  <li><a href="rooms.html">Rooms</a></li>
+                  <li><a href="highlights.html">Highlights</a></li>
+                  <li><a href="contact.html">Contact</a></li>
+                  <li><a href="about.html">About Us</a></li>
+                  <li><a href="login.html">Login</a></li>
+                  <li><a href="booknow.html">Book Now</a></li>
+              </ul>
+           </nav>
+         </div>
+      </header>
+      <div class="w3-content w3-section" style="max-width:1400px;position: relative; overflow: hidden;">
+        <img class="mySlides " src="https://www.travelandleisure.com/thmb/8_soMoL-I8PeiHHK-wNOeFj_cls=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/TAL-peninsula-istanbul-exterior-PENNISTN1122-ad842eab9e0a4c6eb4878a45c70206f6.jpg" style="width:100%">
+        <img class="mySlides" src="https://www.commercialinteriordesign.com/public/article_embed_images/Private-Residences-Retail.jpg" style="width:100%">
+        <img class="mySlides" src="https://i.pinimg.com/originals/57/32/1b/57321b3fca7242ba52da622d3b079b35.jpg" style="width:100%">
+        <div class="overlay-text">
+          <h1><b>___HOTEL PARADISE</b></h1>
+          <h6><p>Your comfort is our priority______</p></h6>
+        </div>
+      </div>
+      <script>
+        var myIndex = 0;
+        carousel();
+      
+       function carousel() 
+       {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        for (i = 0; i < x.length; i++) {
+          x[i].style.display = "none";  
+        }
+        myIndex++;
+        if (myIndex > x.length) {myIndex = 1}    
+        x[myIndex-1].style.display = "block";  
+        setTimeout(carousel, 2000); 
+       }
+      </script>
+      
+  <!--rooms-->
+      <section id="rooms" class="rooms">
+        <div class="container">
+           <h2 class="text"><b>OUR ROOMS</b></h2>
+           <div class="room">
+            <img src="https://www.hotelpanorama.gr/clientfiles/Rooms/Standard%20Double%20Room/Room%20408_resize.jpg" alt="standard Room">
+             <h3>Standard Rooms</h3>
+             <p>Comfortable and cozy stay</p>
+             <div class="features ">
+               <h6 class="mb-1">Features</h6>
+               <span class="badge">1 Bed</span>
+               <span class="badge">1 Balcony</span>
+               <span class="badge">1 Sofa</span>
+           </div>
+           <div>
+            <div class="guest">
+              <h6 class="mb-1">Guests</h6>
+              <span class="badge">2 Adults</span>
+              <span class="badge">1 Child</span>
+            </div>
+            <div class="amenities">
+              <h6 class="mb-1">Amenities</h6>
+              <span class="badge"><i class="fas fa-wifi"></i></span>
+              <span class="badge"><i class="fas fa-tv"></i></span>
+              <span class="badge"><i class="fas fa-snowflake"></i></span>
+          </div>
+           </div>
+             <h6><b>Price: 20000/night</b></h6>
+             <a href="rooms.html" class="btn">Book Now</a> 
+         </div>
+           <div class="room">
+             <img src="https://th.bing.com/th/id/R.a53f9ed127d238961cd44f3ff351f6a5?rik=0SJGkjeL%2fanm2A&riu=http%3a%2f%2fwww.grandlordhotel.com%2fmedias%2froom%2fbig%2f80%2fdeluxe03.jpg&ehk=pV6MxX4Nqzr7PCxa3QC9xK%2f4ILmpxTsnF%2bRlyJXY6Uk%3d&risl=&pid=ImgRaw&r=0" alt="Delux Rooms">
+              <h3>Deluxe Room</h3>
+              <p>Spacious and comfortable.</p>
+              <div class="features ">
+                <h6 class="mb-1">Features</h6>
+                <span class="badge">2 Bed</span>
+                <span class="badge">1 Balcony</span>
+                <span class="badge">2 Sofas</span>
+             </div>
+             <div class="guest">
+              <h6 class="mb-1">Guests</h6>
+              <span class="badge">3 Adults</span>
+              <span class="badge">2 Childeren</span>
+            </div>
+            <div class="amenities">
+              <h6 class="mb-1">Amenities</h6>
+              <span class="badge"><i class="fas fa-wifi"></i></span>
+              <span class="badge"><i class="fas fa-tv"></i></span>
+              <span class="badge"><i class="fas fa-snowflake"></i></span>
+          </div>
+              <h6><b>Price: 30000/night</b></h6>
+              <a href="rooms.html" class="btn">Book Now</a> 
+            </div>
+
+           <div class="room">
+             <img src="https://th.bing.com/th/id/R.84c8863fc03cbb081ec836919035acb5?rik=%2fLxCtyALJMZ7fg&riu=http%3a%2f%2fwww.leograndhotel.com%2fResimler%2fExecutive-Suite-Rooms2.jpg&ehk=ZSnCVvX8OXjy3y5myeARS23PWtcZ66c2tew2yOgfSsE%3d&risl=&pid=ImgRaw&r=0" alt="suite">
+              <h3>Suite</h3>
+              <p>luxurious stays & more Spacious</p>
+              <div class="features ">
+                <h6 class="mb-1">Features</h6>
+                <span class="badge">2 Rooms</span>
+                <span class="badge">2 Balcony</span>
+                <span class="badge">4 Sofas</span>
+             </div>
+             <div class="guest">
+              <h6 class="mb-1">Guests</h6>
+              <span class="badge">4 Adults</span>
+              <span class="badge">4 Child</span>
+            </div>
+            <div class="amenities">
+              <h6 class="mb-1">Amenities</h6>
+              <span class="badge"><i class="fas fa-wifi"></i></span>
+              <span class="badge"><i class="fas fa-tv"></i></span>
+              <span class="badge"><i class="fas fa-snowflake"></i></span>
+          </div>
+               <h6><b>Price: 50000/night</b></h6>
+               <a href="rooms.html" class="btn">Book Now</a> 
+             </div>
+            </div>
+      </section>
+  
+<!--highlights-->
+<section id="highlights">
+    <h2 class="centered-heading"><b>HIGHLIGHTS</b></h2>
+    <pre>Step into india's inaugural luxury heaven a five star hotel in Mumbai.
+      Indulge in a symphony of a culnury delights at are nine legendary bars and 
+      restaurants and revel in the stellar services of a devoted butlers.
+      This is where opulence meets tradition,promising and unforgettable experience.
+    </pre>
+    <div class="scroll-container">
+      <img src="https://i.pinimg.com/originals/57/f2/c0/57f2c09073a1e2e04bb2ecae5e6af75e.png" alt="Cinque Terre" width="600" height="400">
+      <img src="https://th.bing.com/th/id/OIP.tAcXw-Eh25bYS83-uqV4SgHaFj?rs=1&pid=ImgDetMain" alt="Northern Lights" width="600" height="400">
+      <img src="https://vipluxuryservices.com/wp-content/uploads/six_senses_spa_treatment_yao_noi_thailand.jpeg" alt="Mountains" width="600" height="400">
+      <img src="https://healinghotelsoftheworld.com/wp-content/uploads/2019/08/interior-ball-room-dining-area-fancy-warm-energy-healing-taj-mahal-palace-mumbai-hotel-india-1-1580x0-c-default.jpg" alt="Mountains" width="600" height="400">
+      <img src="https://travel.home.sndimg.com/content/dam/images/travel/fullrights/2018/5/3/0/CI_TheLuxuryCollection_PalaceHotel_RoyalTeas.jpg.rend.hgtvcom.966.725.suffix/1525357728382.jpeg" alt="Mountains" width="600" height="400">
+      <img src="https://www.theluxevoyager.com/wp-content/uploads/2019/06/The-Taj-Mahal-Palace-Bar-1.jpeg" alt="Forest" width="600" height="400">
+    </div>
+
+<!--hotel info-->
+<section id="contact" class="py-5">
+  <div class="container">
+      <h2 class=" text text-center mb-4"><b>HOTEL INFORMATION</b></h2>
+      <h2 class="info"><b>Reach Us</b></h2>
+      <div class="row">
+          <div class="col-lg-8 col-md-8">
+              <div class="map-container">
+                  <iframe class="w-100 rounded" width=450px height="450px" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3442.692621262319!2d75.52969757547011!3d30.359684474766375!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3910f33c5968b7ad%3A0x8246d398c6f4e7b1!2sHotel%20Paradise!5e0!3m2!1sen!2sin!4v1740063133867!5m2!1sen!2sin" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+              </div>
+          </div>
+          <div class="col-lg-4 col-md-4">
+              <div class="box">
+                  <h5><b>Call us</b></h5>
+                  <a href="tel:918699151102" class="d-block mb-2 text-decoration-none text-dark">
+                      <i class="fas fa-phone-alt"></i> +918699151101
+                  </a>
+                  <br>
+                  <a href="tel:918699151102" class="d-block text-decoration-none text-dark">
+                      <i class="fas fa-phone-alt"></i> +917888385783
+                  </a>
+              </div>
+
+              <div class="box">
+                  <h5><b>Follow us</b></h5>
+                  <a href="#" class="d-block mb-2 text-decoration-none">
+                      <span class="badge">
+                          <i class="fab fa-twitter"></i> Twitter
+                      </span>
+                  </a>
+                  <br>
+                  <a href="#" class="d-block mb-2 text-decoration-none">
+                      <span class="badge">
+                          <i class="fab fa-facebook-f"></i> Facebook
+                      </span>
+                  </a>
+                  <br>
+                  <a href="#" class="d-block text-decoration-none">
+                      <span class="badge">
+                          <i class="fab fa-instagram"></i> Instagram
+                      </span>
+                  </a>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+
+
+<!--about us-->
+
+ <section id="about">
+  <div class="w3-content w3-section" style="max-width:1400px;position: relative; overflow: hidden;">
+  <img class="size" src="https://www.travelandleisure.com/thmb/8_soMoL-I8PeiHHK-wNOeFj_cls=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/TAL-peninsula-istanbul-exterior-PENNISTN1122-ad842eab9e0a4c6eb4878a45c70206f6.jpg" style="width:100%">
+  <div class="overlay-txt">
+  <h2 class="text"><b>ABOUT US</b></h2>
+  <pre>Hotel Paradise offers a luxurious stay with world-class amenities and services.
+    Experience the best hospitality in the heart of the city.</pre>
+    </div>
+    </div>
+    <h2><b>___A GLOBAL LEGEND___</b></h2>
+    <pre>By infusing architectural landmarks with an inimitable 
+         soul of signature and warmth,PARADISE growing collection of 
+         Hotels,Palaces,Safaris & Resorts has extended its presence aroud the world.
+    </pre>
+   <div class="flip-container">
+    <div class="flip-card">
+     <div class="flip-card-inner">
+       <div class="flip-card-front">
+         <img src="https://www.greavesindia.com/wp-content/uploads/2018/06/Kerala_s-Top-Resorts_Niraamaya-Surya-Samudra_credit-Relais-_-Chateau.jpg"  style="width:300px;height:300px;">
+       </div>
+       <div class="flip-card-back">
+         <h1>RESORT</h1> 
+         <p>Retreats in coveted locales embraced by nature,for breathtaking
+              escape-Paradise pair pearless service with pristine destinations,
+              crafting memories of inspired discovery & indulgent seculsion.
+         </p>
+        </div>
+      </div>
+    </div>
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <img src="https://cdn.cheapism.com/images/Mayan-Rainforest-Suite-Black-Swan-Inn-Pocate.max-825x550.jpg"  style="width:300px;height:300px;">
+        </div>
+        <div class="flip-card-back">
+          <h1>SAFARI</h1> 
+          <p>Paradise safaris are pampering portals
+             into the unspoilt majesty of mother nature.
+              Embark on your great adventure.
+          </p>
+        </div>
+       </div>
+     </div>
+     <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <img src="https://theluxurytravelexpert.com/wp-content/uploads/2019/07/header4.jpg"  style="width:300px;height:300px;">
+        </div>
+        <div class="flip-card-back">
+          <h1>PALACES</h1> 
+          <p>
+            Historicaly important,authenticaly noble &
+             architecturaly precious- Paradise
+            are spaces of splendour embodying the
+             grandeur of kings & queens.
+          </p>
+        </div>
+       </div>
+     </div>
+     <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <img src="https://static2.tripoto.com/media/filter/nl/img/15546/TripDocument/1448884461_01_exterior_dusk_1_lg_47_fotor.jpg"  style="width:300px;height:300px;">
+        </div>
+        <div class="flip-card-back">
+          <h1>HOTEL</h1>
+          <p>
+            Paradise welcomes you into soulfull indulgence, 
+            built on individual attention.
+            savour THE PARADISE touch & enjoy each moment.
+          </p>
+        </div>
+       </div>
+     </div>
+  </div>
+ </section>
+
+<!--footer-->
+<footer>
+  <div class="footer-container">
+      <!-- Connect With Us Section -->
+      <div class="footer-section">
+         <u><h3>Connect With Us</h3></u>
+          <div class="social-icons">
+              <a href="#"><i class="fab fa-facebook"></i></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <a href="#"><i class="fab fa-twitter"></i></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <a href="#"><i class="fab fa-youtube"></i></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <a href="#"><i class="fab fa-instagram"></i></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          </div>
+      </div>
+
+      <!-- Quick Links Section -->
+      <div class="footer-section">
+          <u><h3>Quick Links</h3></u>
+          <ul class="footer-links">
+              <li><a href="home.html">Home</a></li>
+              <li><a href="highlights.html">Highlights</a></li>
+              <li><a href="rooms.html">Rooms</a></li>
+              <li><a href="booknow.html">Book Now</a></li>
+              <li><a href="login.html">Login</a></li>
+              <li><a href="about.html">About Us</a></li>
+          
+          </ul>
+      </div>
+  </div>
+
+  <!-- Copyright -->
+  <p class="footer-bottom">&copy; 2023 Our Hotel. All rights reserved.</p>
+</footer>
+    <script src="script.js"></script>
+
+    
+    <style>
+      footer {
+        background: #333;
+        color: #fff;
+        text-align: center;
+        padding: 30px 0;
+        font-family: 'Poppins', sans-serif;
+      }
+      .footer-container {
+        display: flex;
+        justify-content: center;
+        gap: 50px;
+        max-width: 1100px;
+        margin: auto;
+        padding: 20px;
+        flex-wrap: wrap;
+      }
+      .footer-section h3 {
+        font-size: 18px;
+        margin-bottom: 10px;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+      }
+      .footer-bottom {
+        margin-top: 20px;
+        font-size: 14px;
+        color: #ddd;
+        position:fixed ;
+      }
+      .social-icons a {
+        color: #fff;
+        font-size: 22px;
+        margin: 0 10px;
+        transition: 0.3s ease-in-out;
+      }
+      .social-icons a:hover {
+        color: #f39c12;
+        transform: scale(1.2);
+      }
+      .footer-links {
+        list-style: none;
+        padding: 0;
+      }
+      
+      .footer-links li {
+        margin: 8px 0;
+      }
+      
+      .footer-links li a {
+        color: #fff;
+        text-decoration: none;
+        font-size: 16px;
+        transition: 0.3s ease-in-out;
+      }
+      
+      .footer-links li a:hover {
+        color: #f39c12;
+        text-decoration: underline;
+      }
+      @media (max-width: 768px) {
+        .footer-container {
+            flex-direction: column;
+            text-align: center;
+        }
+      }
+      </style>
+</body>
+</html>
